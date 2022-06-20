@@ -1,0 +1,1 @@
+Extremely opinionated (unofficial and unsupported) reduced installation of Hyde to quickly compile Markdown into self contained HTML pages. Useful for me, making it public in case it's useful for you too.
