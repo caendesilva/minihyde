@@ -210,7 +210,7 @@ return [
     |
     */
 
-    'site_output_path' => Hyde\Framework\Hyde::path('_site'),
+    'site_output_path' => Hyde\Framework\Hyde::path('docs'),
 
     /*
     |--------------------------------------------------------------------------
