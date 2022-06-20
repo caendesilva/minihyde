@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="HydePHP v0.39.0-beta">
+    <title>HydePHP - Elegant and Powerful Static App Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v1.11/dist/hyde.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v1.11/dist/app.css">
+    <meta id="meta-color-scheme" name="color-scheme" content="light">
+    <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
+</head>
+<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white">
+    <main id="content" class="mx-auto max-w-7xl py-16 px-8">
+        <article class="mx-auto prose dark:prose-invert"><h1>HydePHP - Elegant and Powerful Static App Builder</h1>
+<p> 
+    <a href="https://packagist.org/packages/hyde/framework"><img style="display: inline; margin: 4px 2px;" src="https://img.shields.io/packagist/v/hyde/framework?include_prereleases" alt="Latest Version on Packagist"></a> 
+    <a href="https://packagist.org/packages/hyde/framework"><img style="display: inline; margin: 4px 2px;" src="https://img.shields.io/packagist/dt/hyde/framework" alt="Total Downloads on Packagist"></a> 
+    <a href="https://github.com/hydephp/hyde/blob/master/LICENSE.md"> <img style="display: inline; margin: 4px 2px;" src="https://img.shields.io/github/license/hydephp/hyde" alt="License MIT"> </a>
+    <a href="https://cdn.desilva.se/microservices/coverbadges/badges/9b8f6a9a7a48a2df54e6751790bad8bd910015301e379f334d6ec74c4c3806d1.svg"><img style="display: inline; margin: 4px 2px;" src="https://cdn.desilva.se/microservices/coverbadges/badges/9b8f6a9a7a48a2df54e6751790bad8bd910015301e379f334d6ec74c4c3806d1.svg" alt="Test Coverage" title="Average coverage between categories"></a>
+    <a href="https://github.com/hydephp/develop/actions/workflows/continuous-integration.yml"><img style="display: inline; margin: 4px 2px;" src="https://github.com/hydephp/develop/actions/workflows/continuous-integration.yml/badge.svg" alt="Test Suite"></a>
+</p>
+<h2>Make static websites, blogs, and documentation pages with the tools you already know and love.</h2>
+<h3>About HydePHP</h3>
+<p>HydePHP is a content-first Laravel-powered Static Site Builder that allows you to create static HTML pages, blog posts, and documentation sites,
+using your choice of Markdown and/or Blade.</p>
+<p>Build sites in record-time with a full batteries-included TailwindCSS frontend that just works without any fuzz.</p>
+<h3>Speed &amp; simplicity first, full control when you need it.</h3>
+<p>Hyde is all about letting you get started quickly by giving you a full-featured frontend starter kit, while also giving you the power and freedom of doing things the way you want to.</p>
+<p>Markdown purist? That's all you need. Blade artisan? Go for it.
+Hyde comes with hand-crafted frontend templates so you can focus on your content.
+You don't <em>need</em> to customize anything. But you <em>can</em> customize everything.</p>
+<p>See the documentation and learn more at <a href="https://hydephp.com/docs/">https://hydephp.com/docs/</a></p>
+<h2>Features</h2>
+<h3>Content Creation</h3>
+<ul>
+<li>Create blog posts using Markdown and Front Matter.</li>
+<li>Create documentation pages from plain Markdown, no front matter needed!</li>
+<li>Create simple pages using Markdown, or create advanced ones using Laravel Blade.</li>
+<li>You can scaffold blog posts and Markdown pages to automatically fill in the front matter.</li>
+<li>You can also scaffold Blade pages to automatically use the default layout.</li>
+</ul>
+<h3>Built-in Frontend</h3>
+<ul>
+<li>Hyde comes with a TailwindCSS starter kit so you can start making content right away.</li>
+<li>The starter kit is fully responsive, has a dark mode theme, and is customizable.</li>
+<li>The frontend is accessible to screenreaders and rich with semantic HTML and microdata.</li>
+<li>Hyde automatically chooses the right layout to use depending on the content being rendered.</li>
+<li>Hyde also fills in and creates content like navigation menus and sidebars automatically.</li>
+</ul>
+<h3>Easy Asset Managing</h3>
+<ul>
+<li>The Hyde starter comes with <a href="https://github.com/hydephp/hydefront/">HydeFront</a> to serve the base stylesheet and JavaScript through the jsDelivr CDN.</li>
+<li>Hyde ships with precompiled and minified TailwindCSS styles in the app.css file, you can also load them through the CDN.</li>
+<li>This means that all the styles you need are already installed. However, if you want to customize the Tailwind config, or if you add new Tailwind classes through Blade files, you can simply run the <code>npm run dev</code> command to recompile the styles using Laravel Mix.</li>
+</ul>
+<h3>Customization</h3>
+<ul>
+<li>You don't need to configure anything as Hyde is shipped with sensible defaults.</li>
+<li>You can, however, customize nearly everything. Here are some examples:</li>
+<li>All frontend components and page layouts are created with Blade so you
+can publish the vendor views, just like in Laravel.</li>
+<li>Override many of the dynamic content features like the menus and footer.</li>
+</ul>
+<h2>Live Demo &amp; Media</h2>
+<h3>The Hyde Website</h3>
+<p>The Hyde site (<a href="https://hydephp.com/">https://hydephp.com/</a>) is fully built with Hyde. That includes the homepage, the blog, and the documentation.
+You can also take a look at the <a href="https://hydephp.com/gallery">Gallery page</a> which was created using the Blade page module in Hyde and contains interactive graphics showcasing Hyde.</p>
+<h3>Demo video showcasing how to scaffold a blog post and compile it to static HTML</h3>
+<p><a href="https://www.youtube.com/watch?v=gjpE1U527h8"><img src="https://user-images.githubusercontent.com/95144705/163714609-8d636acd-3538-47e9-a6f3-1923b375338b.png" title="Watch on YouTube" alt="YouTube Thumbnail" width="40%"></img></a></p>
+<h2>Getting Started - High-level overview</h2>
+<blockquote>
+<p>See <a href="https://hydephp.com/docs/master/installation.html">Installation Guide</a> and <a href="https://hydephp.com/docs/master/getting-started.html">Getting Started</a> for the full details.</p>
+</blockquote>
+<p>It's a breeze to get started with Hyde. Create a new Hyde project using Composer:</p>
+<pre><code class="language-bash">composer create-project hyde/hyde
+</code></pre>
+<p>Next, place your Markdown files in one of the content directories:  <code>_posts</code>, <code>_docs</code>, and <code>_pages</code> which also accepts Blade files. You can also use use the <code>hyde:make</code> command to scaffold them.</p>
+<p>When you're ready, run the build command to compile your static site which will save your HTML files in the <code>_site</code> directory.</p>
+<pre><code class="language-bash">php hyde build
+</code></pre>
+<h2>⚠ Beta Software Warning</h2>
+<p>Heads up! HydePHP is still new and currently in beta. Please report any bugs and issues in the appropriate issue tracker. Versions in the 0.x series might not be stable and may change at any time. No backwards compatibility guarantees are made and there will be breaking changes without notice.</p>
+<p>Please wait until v1.0 for production use and remember to back up your source files before updating (use Git!).
+See <a href="https://hydephp.com/docs/master/updating-hyde">https://hydephp.com/docs/master/updating-hyde</a> for the upgrade guide.</p>
+<h2>Resources</h2>
+<h3>Changelog</h3>
+<p>Please see <a href="CHANGELOG.md">CHANGELOG</a> for more information on what has changed recently.</p>
+<h3>Contributing</h3>
+<p>HydePHP is an open-source project, contributions are very welcome!</p>
+<p>Development is made in the HydePHP Monorepo, which you can find here <a href="https://github.com/hydephp/develop">https://github.com/hydephp/develop</a>.</p>
+<h3>Security</h3>
+<p>If you discover any security-related issues, please email <a href="mailto:caen@desilva.se">caen@desilva.se</a> instead of using the issue tracker.
+All vulnerabilities will be promptly addressed.</p>
+<h3>Credits</h3>
+<ul>
+<li>
+<a href="https://github.com/caendesilva">Caen De Silva</a>, feel free to buy me a coffee! <a href="https://www.buymeacoffee.com/caen">https://www.buymeacoffee.com/caen</a>
+</li>
+<li>
+<a href="../../contributors">All Contributors</a>
+</li>
+</ul>
+<h3>License</h3>
+<p>The MIT License (MIT). Please see <a href="LICENSE.md">License File</a> for more information.</p>
+<h3>Attributions</h3>
+<blockquote>
+<p>Please see the respective authors' repositories for their license files</p>
+</blockquote>
+<ul>
+<li>The Hyde core is built with <a href="https://laravel-zero.com/">Laravel Zero</a> which is based on <a href="https://laravel.com/">Laravel</a>
+</li>
+<li>The documentation frontend is based on <a href="https://github.com/caendesilva/lagrafo">Lagrafo - Docs for Laravel apps</a>
+</li>
+<li>The dark mode switch is based on a component from <a href="https://flowbite.com/docs/customize/dark-mode/">Flowbite</a>.</li>
+<li>The frontend is built with <a href="https://tailwindcss.com/">TailwindCSS</a>.</li>
+</ul>
+</article>
+    </main>
+    <script defer src="https://cdn.jsdelivr.net/npm/hydefront@v1.11/dist/app.js"></script>
+</body>
+</html>
