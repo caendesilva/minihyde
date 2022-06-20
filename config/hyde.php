@@ -61,7 +61,7 @@ return [
 
     'pretty_urls' => false,
 
-    'generate_sitemap' => true,
+    'generate_sitemap' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,6 @@ return [
         // Meta::name('description', 'My Hyde Blog'),
         // Meta::name('keywords', 'Static Sites, Blogs, Documentation'),
         Meta::name('generator', 'HydePHP '.Hyde\Framework\Hyde::version()),
-        Meta::property('site_name', $siteName),
     ],
 
     /*
@@ -111,18 +110,8 @@ return [
     */
 
     'features' => [
-        // Page Modules
-        Features::blogPosts(),
-        Features::bladePages(),
         Features::markdownPages(),
-        Features::documentationPages(),
-
-        // Frontend Features
         Features::darkmode(),
-        Features::documentationSearch(),
-
-        // Integrations
-        Features::torchlight(),
     ],
 
     /*
