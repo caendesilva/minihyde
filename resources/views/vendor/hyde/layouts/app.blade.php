@@ -13,10 +13,9 @@
 @endif
 </head>
 <body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white">
-    <a href="#content" id="skip-to-content">Skip to content</a>
-    <section>
-@yield('content') 
-    </section>
+    <main id="content" class="mx-auto max-w-7xl py-16 px-8">
+        <article @class(['mx-auto prose dark:prose-invert', 'torchlight-enabled' => Hyde\Framework\Helpers\Features::hasTorchlight()])>{!! $markdown !!}</article>
+    </main>
     <script defer src="https://cdn.jsdelivr.net/npm/hydefront@v1.11/dist/app.js"></script>
 </body>
 </html>
